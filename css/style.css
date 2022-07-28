@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(../fonts/Oswaldlight.woff2) format('woff2'),
+        url(../fonts/Oswaldlight.woff) format('woff');
+    font-style: normal;
+    font-weight: light;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(../fonts/Oswaldregular.woff2) format('woff2'),
+        url(../fonts/Oswaldregular.woff) format('woff');
+    font-style: normal;
+    font-weight: regular;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url(../fonts/Oswaldmedium.woff2) format('woff2'),
+			url(../fonts/Oswaldmedium.woff) format('woff');
+	font-style: normal;
+	font-weight: bold;
+	font-display: swap;
+}
+
+:root {
+  --font-primary: 'Oswald', serif;
+  --regular-size: 16px;
+	--main-color: #fff;
+  --text-color: #14408F;
+  --primary-color: #0B4BB2;
+  --gray-color:#878787;
+  --border-color:#D2D6DA;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+body {
+  color:var(--primary-color);
+  background-color:var(--main-color);
+  font-family:var(--font-primary);
+  font-size: var(--regular-size);
+  line-height: 1.1;
+}
+
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.header {
+	background: url(../images/background_top.jpg);
+	
+}
+
+.header__top {
+	display: grid;
+	grid-template-columns: 200px 1fr 350px;
+	padding-top: 30px;
+	justify-items: end;
+}
+.logo {
+}
+.logo__img {
+	width: 100%;
+}
+.menu {
+}
+.menu__list {
+	display: flex;
+}
+
+.menu__item {
+font-weight: 400;
+font-size: 24px;
+line-height: 1.5;
+text-transform: uppercase;
+padding-right: 20px;
+}
+.menu__link {
+}
+.header__phone {
+	font-weight: 400;
+	font-size: 36px;
+}
+.header__content {
+}
+.header_title {
+	font-size: 72px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	padding-top: 95px;
+}
+.header__btn {
+}
+.footer__contacts-link {
+}
+.main {
+}
+.footer {
+}
