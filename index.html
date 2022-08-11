@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -56,7 +57,8 @@
 						</svg>
 					</button>
 				</nav>
-				<a class="header__phone" href="tel:88002005172">8-(800)-200-51-72</a>
+				<a data-wow-duration="15s" class="header__phone infinite wow animate__bounceIn" data-wow-duration
+					href="tel:88002005172">8-(800)-200-51-72</a>
 			</div>
 			<div class="header__content">
 				<h1 class="header_title">
@@ -207,14 +209,16 @@
 								</ul>
 							</div>
 							<picture class="characteristics__icon icon_1">
-								<img class="characteristics__icon_img" src="images/characteristics_1.png" alt="tractor">
+								<img data-wow-delay="1s" class="characteristics__icon_img  wow animate__zoomIn"
+									src="images/characteristics_1.png" alt="tractor">
 							</picture>
 						</li>
 						<li class="characteristics__item characteristics_2">
-							<p class="characteristics__item_text">высокоинтегрированная
+							<p class="characteristics__item_text">высокоинтегрированная <br>
 								система</p>
 							<picture class="characteristics__icon icon_2">
-								<img class="characteristics__icon_img" src="images/characteristics_2.png" alt="tractor">
+								<img data-wow-delay="1.2s" class="characteristics__icon_img  wow animate__zoomIn"
+									src="images/characteristics_2.png" alt="tractor">
 							</picture>
 						</li>
 						<li class="characteristics__item characteristics_3">
@@ -223,7 +227,9 @@
 								моментом
 							</p>
 							<picture class="characteristics__icon icon_3">
-								<img class="characteristics__icon_img" src="images/characteristics_3.png" alt="tractor">
+								<img data-wow-delay="1.4s" class="characteristics__icon_img  wow animate__zoomIn"
+									data-when="enter" data-from="0" data-to="1" data-opacity="0" data-scale="1.5"
+									src="images/characteristics_3.png" alt="tractor">
 							</picture>
 						</li>
 						<li class="characteristics__item characteristics_4">
@@ -232,7 +238,8 @@
 							</p>
 
 							<picture class="characteristics__icon icon_4">
-								<img class="characteristics__icon_img" src="images/characteristics_4.png" alt="tractor">
+								<img data-wow-delay="1.6s" class="characteristics__icon_img  wow animate__zoomIn"
+									src="images/characteristics_4.png" alt="tractor">
 							</picture>
 
 						</li>
@@ -242,7 +249,8 @@
 							</p>
 
 							<picture class="characteristics__icon icon_5">
-								<img class="characteristics__icon_img" src="images/characteristics_5.png" alt="tractor">
+								<img data-wow-delay="1.7s" class="characteristics__icon_img  wow animate__zoomIn"
+									src="images/characteristics_5.png" alt="tractor">
 							</picture>
 						</li>
 						<li class="characteristics__item characteristics_6">
@@ -250,22 +258,25 @@
 								<span>30 минут</span>
 							</p>
 							<picture class="characteristics__icon icon_6">
-								<img class="characteristics__icon_img" src="images/characteristics_6.png" alt="tractor">
+								<img data-wow-delay="1.8s" class="characteristics__icon_img  wow animate__zoomIn"
+									src="images/characteristics_6.png" alt="tractor">
 							</picture>
 						</li>
 						<li class="characteristics__item characteristics_7">
 							<p class="characteristics__item_text characteristics__item_text_7">калибровка
 								<span>15 минут</span>
 							</p>
-
 							<picture class="characteristics__icon icon_7">
-								<img class="characteristics__icon_img" src="images/characteristics_7.png" alt="tractor">
+								<img data-wow-delay="2s" class="characteristics__icon_img  wow animate__zoomIn"
+									src="images/characteristics_7.png" alt="tractor">
 							</picture>
 						</li>
 					</ul>
 					<picture class="characteristics__picture">
 						<source srcset="" media="(min-width: 600px)">
-						<img class="characteristics__img" src="images/tractor.png" alt="tractor">
+						<img data-wow-delay="0.8s" class="characteristics__img wow animate__fadeInRight"
+							src="images/tractor.png" alt="tractor">
+
 					</picture>
 				</div>
 			</div>
@@ -380,8 +391,8 @@
 						<h2 class="title contacts__title">Оставить заявку</h2>
 						<p></p>
 						<input type="text" class="contacts__input" placeholder="Как Вас зовут?">
-						<input type="text" class="contacts__input" placeholder="Ваш номер телефона">
-						<button class="button contacts__button">Отправить</button>
+						<input type="tel" name="tel" class="contacts__input" placeholder="Ваш номер телефона">
+						<button type="submit" class="button contacts__button">Отправить</button>
 
 					</div>
 				</div>
@@ -405,6 +416,7 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/wow.min.js"></script>
 </body>
 
 </html>
