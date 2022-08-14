@@ -64,27 +64,28 @@
 				<h1 class="header_title">
 					официальный импортер <br> агронавигаторов AllyNav в России
 				</h1>
-<div class="header__content_wrapper">
-	<button class="button">
-		заказать
-	</button>
-	<div class="header__social">
-		<a class="header__social_link" href="https://wa.me/89039811862" target="_blank"
-			aria-label="WhatsApp">
-			<img src="images/whatsapp.svg" alt="WhatsApp">
-		</a>
-		<a class="header__social_link" href="mailto:elektrobikeukr@gmail.com" class="footer__contacts-link">
-			<img src="images/mail.svg" alt="mail">
-		</a>
-	</div>
-</div>
-				
+				<div class="header__content_wrapper">
+					<button class="button">
+						заказать
+					</button>
+					<div class="header__social">
+						<a class="header__social_link" href="https://wa.me/89039811862" target="_blank"
+							aria-label="WhatsApp">
+							<img src="images/whatsapp.svg" alt="WhatsApp">
+						</a>
+						<a class="header__social_link" href="mailto:elektrobikeukr@gmail.com"
+							class="footer__contacts-link">
+							<img src="images/mail.svg" alt="mail">
+						</a>
+					</div>
+				</div>
+
 				<img class="header__image" src="images/blok_1.png" alt="AF305"></img>
 			</div>
 
 		</div>
 	</header>
-	 <main class="main">
+	<main class="main">
 		<section class="about">
 			<div class="container">
 				<h2 class="title">
@@ -389,14 +390,13 @@
 							</li>
 						</ul>
 					</div>
-					<div class="contacts__form">
-						<h2 class="title contacts__title">Оставить заявку</h2>
+					<form class="form" action="#" id="form" class="form__body">
+						<h2 class="title form__title">Оставить заявку</h2>
 						<p></p>
-						<input type="text" class="contacts__input" placeholder="Как Вас зовут?">
-						<input type="tel" name="tel" class="contacts__input" placeholder="Ваш номер телефона">
-						<button type="submit" class="button contacts__button">Отправить</button>
-
-					</div>
+						<input type="text" class="form__input _req" placeholder="Как Вас зовут?">
+						<input type="tel" name="tel" class="form__input _req _phone" placeholder="Ваш номер телефона">
+						<button type="submit" class="button form__button">Отправить</button>
+					</form>
 				</div>
 			</div>
 
@@ -412,12 +412,13 @@
 			</div>
 
 		</div>
-	</footer> 
+	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
 	<script src="js/wow.min.js"></script>
 </body>
 
