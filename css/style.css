@@ -683,7 +683,7 @@ margin: 0 10px;
 
 .form__button {
   margin-top: 78px;
-  background-color: var(--main-color);
+  background: var(--main-color);
   color: var(--primary-color);
 }
 
