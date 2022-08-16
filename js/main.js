@@ -2,6 +2,7 @@ $(function () {
   $(".slider__list").slick({
     infinite: true,
     dots: true,
+    centerPadding: "60px",
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 2,
@@ -33,7 +34,8 @@ $(function () {
   });
   wow.init();
 
-  $(".menu__btn").on("click", function () {
-    $(".menu__list").slideToggle();
+  $(".menu__btn").on("click", function (e) {
+    $(".menu__btn").toggleClass("active");
+    $(".menu__list").toggleClass("active");
   });
 });

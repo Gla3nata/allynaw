@@ -118,6 +118,7 @@ body {
   background-position: top center;
   min-height: 700px;
   color: var(--main-color);
+
 }
 
 .header__top {
@@ -174,6 +175,7 @@ padding-right: 20px;
   max-width: 250px;
   width: 100%;
  letter-spacing: 3px;
+ background-image: linear-gradient(190deg, #3c7d41 0%, #8fc866 90%);
 }
 
 .button:hover, 
@@ -769,12 +771,79 @@ margin: 0 10px;
 		grid-column-start: 1;
 		grid-row-start: 1;
 	}
+  .menu__btn{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 25px;
+    z-index: 55;
+  }
+  .menu__btn span{
+    position: absolute;
+    background: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 12px;
+    transition: all 0.3s ease 0s;
+  }
+ 
+  .menu__btn::before,
+  .menu__btn::after{
+    content:'';
+    background-color: var(--main-color);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .menu__btn::before{
+    top: 0;
+  }
+  .menu__btn::after{
+    bottom: 0;
+  }
 	.menu__list{
-		display: none;
-	}
-	.menu__btn{
 		display: block;
+    position: fixed;
+    top:-100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--hover);
+    padding: 100px 40px;
+    z-index: 5;
+    transition: all 0.3s ease 0s;
 	}
+  .menu__list.active{
+    top: 0;
+  }
+
+  .menu__item{
+    
+    margin: 0 0 20px 0;
+  }
+  .menu__btn.active::before{
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  .menu__btn.active::after{
+    transform: rotate(-45deg);
+    bottom: 13px;
+  }
+  .menu__btn.active span{
+    transform: scale(0);
+  }
+  .menu__btn::before {
+    
+}
+
+
+
+
+
 	.characteristics__picture img{
 		width: 100%;
 	}
@@ -819,6 +888,7 @@ margin: 0 10px;
 .characteristics__list,
 .characteristics__item_text_3{
 	width: 100%;
+
 }
 }
 
