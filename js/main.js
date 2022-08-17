@@ -2,7 +2,8 @@ $(function () {
   $(".slider__list").slick({
     infinite: true,
     dots: true,
-    centerPadding: "60px",
+		centerMode: true,
+    centerPadding: "5px",
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 2,
@@ -13,11 +14,13 @@ $(function () {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
+					centerPadding: "0px",
         },
       },
       {
         breakpoint: 560,
         settings: {
+					centerMode: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
