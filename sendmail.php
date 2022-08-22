@@ -9,14 +9,14 @@ require 'PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->setLangyage('ru', 'phpmailer/language/');
-$maIsHTML(true);
+$mail->IsHTML(true);
 
 
 //от кого
-$mail->setFrom('nata@gmail.ru', 'Allynav')
+$mail->setFrom('n-konstantinova@mail.ru', 'от Allynav')
 
 //кому
-$mail->addAddress('test@gmail.ru', 'Allynav')
+// $mail->addAddress('0207natalya@gmail.com', 'кому Allynav')
 
 //тема
 $mail->Subject = ('Сообщение с сайта Allynav')
@@ -26,10 +26,10 @@ $mail->Subject = ('Сообщение с сайта Allynav')
 $body = '<h3>Новое сообщение</h3>';
 
 if(trim(!empty($_POST['name']))){
-    $body.='<p>Имя '.$_POST['email'].</p>;
+    $body.='<p>Имя '.$_POST['name'].'</p>';
 }
 if(trim(!empty($_POST['phone']))){
-    $body.='<p>Телефон '.$_POST['email'].</p>;
+    $body.='<p>Телефон '.$_POST['phone'].'</p>';
 }
 
 $mail->Body = $body;
