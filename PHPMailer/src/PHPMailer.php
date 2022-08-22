@@ -1933,12 +1933,14 @@ class PHPMailer
                 );
             }
         } else {
+            echo("<script>console.log('php_string1: ".$result."');</script>");
             $result = $this->mailPassthru($to, $this->Subject, $body, $header, $params);
             $this->doCallback($result, $this->to, $this->cc, $this->bcc, $this->Subject, $body, $this->From, []);
         }
         if (isset($old_from)) {
             ini_set('sendmail_from', $old_from);
         }
+        echo("<script>console.log('php_string2: ".$result."');</script>");
         if (!$result) {
             throw new Exception($this->lang('instantiate'), self::STOP_CRITICAL);
         }

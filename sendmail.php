@@ -4,22 +4,20 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
 
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
-$mail->setLangyage('ru', 'phpmailer/language/');
-$mail->IsHTML(true);
-
+$mail->setLanguage('ru', 'phpmailer/language/');
+$mail->isHTML(true);
 
 //от кого
-$mail->setFrom('n-konstantinova@mail.ru', 'от Allynav')
+$mail->setFrom('n-konstantinova@mail.ru');
 
 //кому
-// $mail->addAddress('0207natalya@gmail.com', 'кому Allynav')
+$mail->addAddress('0207natalya@gmail.com');
 
 //тема
-$mail->Subject = ('Сообщение с сайта Allynav')
+$mail->Subject = ('Сообщение с сайта Allynav');
 
 ///Письмо
 
